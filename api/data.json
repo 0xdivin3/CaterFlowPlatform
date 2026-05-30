@@ -1,0 +1,333 @@
+{
+  "bookings": [
+    {
+      "id": 1,
+      "name": "Johnson Wedding Reception",
+      "client": "Emily Johnson",
+      "phone": "080-555-0101",
+      "email": "emily@email.com",
+      "date": "2026-05-22",
+      "time": "17:00",
+      "guests": 120,
+      "pkg": "gold",
+      "staff": [
+        "Maria G.",
+        "James T."
+      ],
+      "status": "confirmed",
+      "notes": "Gluten-free options for 15 guests",
+      "venue": "Grand Ballroom, Eko Hotel"
+    },
+    {
+      "id": 2,
+      "name": "TechCorp Annual Gala",
+      "client": "Alan Park",
+      "phone": "080-555-0202",
+      "email": "alan@techcorp.com",
+      "date": "2026-05-24",
+      "time": "19:00",
+      "guests": 80,
+      "pkg": "silver",
+      "staff": [
+        "Priya N."
+      ],
+      "status": "confirmed",
+      "notes": "No pork products",
+      "venue": "VI Convention Centre"
+    },
+    {
+      "id": 3,
+      "name": "Rivera Quinceañera",
+      "client": "Laura Rivera",
+      "phone": "080-555-0303",
+      "email": "laura@email.com",
+      "date": "2026-05-28",
+      "time": "18:00",
+      "guests": 200,
+      "pkg": "gold",
+      "staff": [
+        "Carlos M.",
+        "Sophie L."
+      ],
+      "status": "pending",
+      "notes": "Traditional Latin menu",
+      "venue": "Landmark Event Centre"
+    },
+    {
+      "id": 4,
+      "name": "Hoffman Retirement Party",
+      "client": "Bob Hoffman",
+      "phone": "080-555-0404",
+      "email": "bob@email.com",
+      "date": "2026-05-31",
+      "time": "12:00",
+      "guests": 45,
+      "pkg": "bronze",
+      "staff": [
+        "Kwame A."
+      ],
+      "status": "pending",
+      "notes": "",
+      "venue": "Ikeja City Mall Rooftop"
+    },
+    {
+      "id": 5,
+      "name": "Museum Fundraiser Dinner",
+      "client": "Lagos Museum Board",
+      "phone": "080-555-0505",
+      "email": "board@museum.ng",
+      "date": "2026-06-05",
+      "time": "20:00",
+      "guests": 300,
+      "pkg": "gold",
+      "staff": [
+        "Maria G.",
+        "James T.",
+        "Priya N."
+      ],
+      "status": "confirmed",
+      "notes": "Black tie, champagne reception",
+      "venue": "National Museum Lagos"
+    },
+    {
+      "id": 6,
+      "name": "Chen Anniversary Banquet",
+      "client": "Mei Chen",
+      "phone": "080-555-0606",
+      "email": "mei@email.com",
+      "date": "2026-04-12",
+      "time": "18:30",
+      "guests": 60,
+      "pkg": "silver",
+      "staff": [
+        "James T."
+      ],
+      "status": "completed",
+      "notes": "",
+      "venue": "Oriental Hotel Lagos"
+    },
+    {
+      "name": "aboy",
+      "client": "clon",
+      "phone": "0806364637",
+      "email": "willdiv28@gmail.com",
+      "date": "2026-05-25",
+      "time": "18:00",
+      "guests": "",
+      "pkg": "bronze",
+      "staff": [
+        "Carlos M."
+      ],
+      "status": "confirmed",
+      "notes": "ready",
+      "venue": "abuja",
+      "id": 1779485412354
+    }
+  ],
+  "staff": [
+    {
+      "id": 1,
+      "name": "Maria G.",
+      "role": "Head Chef",
+      "phone": "080-111-0001",
+      "email": "maria@caterflow.com",
+      "avail": [
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "color": 0
+    },
+    {
+      "id": 2,
+      "name": "James T.",
+      "role": "Sous Chef",
+      "phone": "080-111-0002",
+      "email": "james@caterflow.com",
+      "avail": [
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "color": 1
+    },
+    {
+      "id": 3,
+      "name": "Priya N.",
+      "role": "Event Manager",
+      "phone": "080-111-0003",
+      "email": "priya@caterflow.com",
+      "avail": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "color": 2
+    },
+    {
+      "id": 4,
+      "name": "Carlos M.",
+      "role": "Server Lead",
+      "phone": "080-111-0004",
+      "email": "carlos@caterflow.com",
+      "avail": [
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "color": 3
+    },
+    {
+      "id": 5,
+      "name": "Sophie L.",
+      "role": "Pastry Chef",
+      "phone": "080-111-0005",
+      "email": "sophie@caterflow.com",
+      "avail": [
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "color": 4
+    },
+    {
+      "id": 6,
+      "name": "Kwame A.",
+      "role": "Bartender",
+      "phone": "080-111-0006",
+      "email": "kwame@caterflow.com",
+      "avail": [
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "color": 5
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "type": "booking",
+      "title": "New booking confirmed",
+      "body": "Johnson Wedding Reception — Emily confirmed the deposit.",
+      "time": "2 hours ago",
+      "read": false
+    },
+    {
+      "id": 2,
+      "type": "staff",
+      "title": "Staff availability update",
+      "body": "Priya N. marked unavailable June 10–12.",
+      "time": "5 hours ago",
+      "read": false
+    },
+    {
+      "id": 3,
+      "type": "reminder",
+      "title": "Event tomorrow",
+      "body": "TechCorp Annual Gala — May 24 at 7:00 PM.",
+      "time": "Yesterday",
+      "read": true
+    },
+    {
+      "id": 4,
+      "type": "payment",
+      "title": "Payment received",
+      "body": "Chen Anniversary Banquet — $2,700 paid in full.",
+      "time": "2 days ago",
+      "read": true
+    }
+  ],
+  "packages": [
+    {
+      "id": "bronze",
+      "name": "Bronze",
+      "rate": 25,
+      "featured": false,
+      "features": [
+        "Basic buffet setup",
+        "2 servers per 50 guests",
+        "Standard tableware",
+        "3hr service window"
+      ]
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "rate": 45,
+      "featured": true,
+      "features": [
+        "Premium buffet + plated",
+        "3 servers per 50 guests",
+        "Premium tableware",
+        "5hr service",
+        "Bar setup"
+      ]
+    },
+    {
+      "id": "gold",
+      "name": "Gold",
+      "rate": 75,
+      "featured": false,
+      "features": [
+        "Full sit-down dining",
+        "5 servers per 50 guests",
+        "Luxury tableware",
+        "8hr service",
+        "Full open bar",
+        "Floral centrepieces",
+        "Event coordinator"
+      ]
+    }
+  ],
+  "menu": {
+    "Starters": [
+      "Garden salad",
+      "Tomato bisque",
+      "Bruschetta",
+      "Prawn cocktail"
+    ],
+    "Mains": [
+      "Grilled chicken",
+      "Pan-seared salmon",
+      "Beef tenderloin",
+      "Vegetable Wellington"
+    ],
+    "Sides": [
+      "Roasted vegetables",
+      "Garlic mashed potato",
+      "Steamed rice",
+      "Couscous salad"
+    ],
+    "Desserts": [
+      "Chocolate fondant",
+      "Vanilla panna cotta",
+      "Fresh fruit platter",
+      "Wedding cake tier"
+    ]
+  }
+}

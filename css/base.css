@@ -1,0 +1,78 @@
+/* ============================================================
+   css/base.css — Reset, CSS variables (LIGHT THEME), typography
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* Backgrounds */
+  --bg:    #f8f9fb;
+  --bg2:   #ffffff;
+  --bg3:   #f1f3f7;
+  --bg4:   #e8ecf2;
+
+  /* Borders */
+  --border:  #e2e6ef;
+  --border2: #c8d0e0;
+
+  /* Text */
+  --text:  #111827;
+  --text2: #4b5563;
+  --text3: #9ca3af;
+
+  /* Accent — green */
+  --accent:     #16a34a;
+  --accent2:    #15803d;
+  --accent-bg:  rgba(22, 163, 74, 0.07);
+  --accent-light: #dcfce7;
+
+  /* Semantic colours */
+  --amber:       #d97706;
+  --amber-bg:    rgba(217,119,6,0.07);
+  --amber-light: #fef3c7;
+  --blue:        #2563eb;
+  --blue-bg:     rgba(37,99,235,0.07);
+  --blue-light:  #dbeafe;
+  --red:         #dc2626;
+  --red-bg:      rgba(220,38,38,0.07);
+  --red-light:   #fee2e2;
+  --purple:      #7c3aed;
+  --purple-bg:   rgba(124,58,237,0.07);
+  --purple-light:#ede9fe;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow:    0 4px 12px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
+  --shadow-lg: 0 12px 40px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.06);
+
+  /* Radii */
+  --r:  10px;
+  --rl: 14px;
+
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+}
+
+body { min-height: 100vh; background: var(--bg); color: var(--text); }
+
+.serif, h1, h2, h3, .section-title { font-family: 'DM Serif Display', serif; }
+
+.section-title { font-size: 16px; color: var(--text); margin-bottom: 1rem; }
+
+.divider { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
+
+.empty { text-align: center; padding: 4rem 2rem; color: var(--text3); }
+.empty i { font-size: 48px; margin-bottom: 1rem; display: block; opacity: 0.25; }
+
+.chip {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 4px 10px; border-radius: 100px; font-size: 11px;
+  background: var(--bg4); color: var(--text2); border: 1px solid var(--border);
+}
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: var(--bg3); }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }

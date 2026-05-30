@@ -1,0 +1,74 @@
+/* ============================================================
+   css/auth.css — Sign-in & Sign-up screens (LIGHT)
+   ============================================================ */
+
+.auth-wrap {
+  min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--bg);
+  padding: 2rem;
+}
+
+.auth-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--rl);
+  padding: 2.5rem;
+  width: 100%; max-width: 430px;
+  box-shadow: var(--shadow);
+}
+
+.auth-logo { display: flex; align-items: center; gap: 12px; margin-bottom: 2rem; justify-content: center; }
+.auth-logo-icon {
+  width: 44px; height: 44px; background: var(--accent);
+  border-radius: 10px; display: flex; align-items: center;
+  justify-content: center; color: #fff; font-size: 22px;
+}
+.auth-logo-text { font-family: 'DM Serif Display', serif; font-size: 22px; color: var(--text); }
+.auth-logo-sub  { font-size: 11px; color: var(--text3); letter-spacing: .06em; text-transform: uppercase; }
+
+.auth-title { font-family: 'DM Serif Display', serif; font-size: 22px; color: var(--text); margin-bottom: .4rem; text-align: center; }
+.auth-sub   { font-size: 13px; color: var(--text2); text-align: center; margin-bottom: 2rem; }
+
+.auth-error {
+  background: var(--red-light); border: 1px solid #fca5a5;
+  border-radius: var(--r); padding: 10px 14px; font-size: 13px;
+  color: var(--red); margin-bottom: 1rem;
+}
+.auth-success {
+  background: var(--accent-light); border: 1px solid #86efac;
+  border-radius: var(--r); padding: 10px 14px; font-size: 13px;
+  color: var(--accent2); margin-bottom: 1rem;
+}
+
+.auth-switch { text-align: center; margin-top: 1.5rem; font-size: 13px; color: var(--text2); }
+.auth-switch a { color: var(--accent); cursor: pointer; text-decoration: none; }
+.auth-switch a:hover { text-decoration: underline; }
+
+.auth-divider { display: flex; align-items: center; gap: 12px; margin: 1.25rem 0; color: var(--text3); font-size: 12px; }
+.auth-divider::before, .auth-divider::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+.auth-steps { display: flex; gap: 6px; margin-bottom: 1.5rem; }
+.auth-step-bar { flex: 1; height: 3px; border-radius: 2px; background: var(--border); transition: background .3s; }
+.auth-step-bar.active { background: var(--accent); }
+
+.role-select { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 1rem; }
+.role-opt {
+  border: 1px solid var(--border); border-radius: var(--r);
+  padding: 10px; cursor: pointer; transition: all .15s;
+  text-align: center; background: transparent;
+}
+.role-opt:hover { border-color: var(--border2); background: var(--bg3); }
+.role-opt.selected { border-color: var(--accent); background: var(--accent-bg); }
+.role-opt i { font-size: 20px; display: block; margin-bottom: 4px; color: var(--text3); }
+.role-opt.selected i { color: var(--accent); }
+.role-opt .role-name { font-size: 12px; font-weight: 500; color: var(--text); }
+.role-opt .role-desc { font-size: 10px; color: var(--text3); margin-top: 2px; }
+
+.pw-wrap { position: relative; }
+.pw-wrap input { padding-right: 38px; }
+.pw-eye {
+  position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+  background: none; border: none; cursor: pointer; color: var(--text3); font-size: 16px; padding: 0;
+}
+.pw-eye:hover { color: var(--text2); }
