@@ -1,7 +1,6 @@
 {
   "version": 2,
   "buildCommand": "npm install",
-  "framework": "vanilla",
   "public": true,
   "functions": {
     "api/index.js": {
@@ -18,4 +17,5 @@
       "dest": "/index.html"
     }
   ]
+}
 }
