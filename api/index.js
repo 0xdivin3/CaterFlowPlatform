@@ -4,7 +4,7 @@ const path = require('path');
 
 const app = express();
 app.use(express.json());
-app.use(express.static('..'));
+app.use(express.static(path.join(__dirname, '..')));
 
 // Use /tmp for Vercel (ephemeral storage) or fallback to api/data.json
 const DATA_PATH = process.env.NODE_ENV === 'production' 
@@ -89,6 +89,11 @@ app.get('/api/packages', async (req, res) => {
 app.get('/api/menu', async (req, res) => {
   const db = await readDB();
   res.json(db.menu || {});
+});
+
+// SPA fallback for all other routes
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'index.html'));
 });
 
 module.exports = app;
